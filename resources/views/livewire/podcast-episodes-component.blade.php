@@ -1,13 +1,13 @@
 <div>
         <div class="flex h-screen">
                 <div class="m-auto">
-                @foreach($episodes as $episode)
-                        <a href="{{$episode['external_urls']['spotify']}}">        {{$episode['name']}}
+                @foreach($episodes_to_show as $episode)
+                        <a href="{{$episode['episode_url']}}">        {{$episode['name']}}
                         </a>
                         <br>
                         <div>
 
-                                <img class="h-1/2 w-1/2 " src="{{$episode['images'][0]['url']}}" >
+                                <img class="h-1/2 w-1/2 " src="{{$episode['image_url']}}" >
 
                         </div>
                 @endforeach

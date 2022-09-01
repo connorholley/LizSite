@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Livewire\PodcastEpisodes;
+use App\Http\Livewire\PodcastEpisodesComponent;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/podcasts', PodcastEpisodes::class)->name('podcast-episodes');
+Route::get('/podcasts', PodcastEpisodesComponent::class)->name('podcast-episodes');
