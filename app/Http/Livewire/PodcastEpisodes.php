@@ -12,8 +12,13 @@ class PodcastEpisodes extends Component
     public function mount()
     {
         $this->number=7;
-//        $this->episodes= Spotify::showEpisodes('7nUXw5GywrsMrS4CZlY6ij')->get();
-
+        $spotify= new Spotify([
+            'country' => null,
+            'locale' => null,
+            'market' => 'US',
+        ]);
+        $this->episodes= $spotify->showEpisodes('7nUXw5GywrsMrS4CZlY6ij')->get()['items'];
+        ray($this->episodes);
     }
     public function render()
     {
