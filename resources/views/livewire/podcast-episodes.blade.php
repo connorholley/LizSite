@@ -7,7 +7,7 @@
                         <br>
                         <div>
 
-                                <img class="h-1/2 w-1/2 " src="{{$episode['images'][0]['url']}}" alt="People working on laptops">
+                                <img class="h-1/2 w-1/2 " src="{{$episode['images'][0]['url']}}" >
 
                         </div>
                 @endforeach
