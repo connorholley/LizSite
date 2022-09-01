@@ -151,7 +151,7 @@
 
         <main>
             <!-- Hero section -->
-            <div class="relative">
+            <div class="relative  pt-16 pb-32">
                 <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100"></div>
                 <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
                     <div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
@@ -176,7 +176,7 @@
                 </div>
             </div>
 
-            <div class="relative bg-white">
+            <div class="relative overflow-hidden pt-16">
                 <div class="absolute inset-0">
                     <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-50"></div>
                 </div>
