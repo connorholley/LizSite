@@ -51,7 +51,7 @@
 
                         </div>
 
-                        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Podcast Archive/Learning Resources</a>
+                        <a href="/podcasts" class="text-base font-medium text-gray-500 hover:text-gray-900">Podcast Archive/Resources</a>
                         <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Past Guests and Research</a>
                         <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Social Media</a>
                     </nav>
@@ -168,9 +168,81 @@
                             <div class="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                                 <div class="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                                     <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">Learn More</a>
-                                    <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8">Visit The Archive</a>
+                                    <a href="/podcasts" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-500 bg-opacity-60 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-opacity-70 sm:px-8">Visit The Archive</a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative bg-white">
+                <div class="absolute inset-0">
+                    <div class="absolute inset-y-0 left-0 w-1/2 bg-gray-50"></div>
+                </div>
+                <div class="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
+                    <div class="bg-gray-50 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
+                        <div class="mx-auto max-w-lg">
+                            <h2 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-3xl">Get in touch</h2>
+                            <p class="mt-3 text-lg leading-6 text-gray-500">Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus arcu.</p>
+                            <dl class="mt-8 text-base text-gray-500">
+                                <div>
+                                    <dt class="sr-only">Postal address</dt>
+                                    <dd>
+                                        <p>742 Evergreen Terrace</p>
+                                        <p>Springfield, OR 12345</p>
+                                    </dd>
+                                </div>
+                                <div class="mt-6">
+                                    <dt class="sr-only">Phone number</dt>
+                                    <dd class="flex">
+                                        <!-- Heroicon name: outline/phone -->
+                                        <svg class="h-6 w-6 flex-shrink-0 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                                        </svg>
+                                        <span class="ml-3">+1 (555) 123-4567</span>
+                                    </dd>
+                                </div>
+                                <div class="mt-3">
+                                    <dt class="sr-only">Email</dt>
+                                    <dd class="flex">
+                                        <!-- Heroicon name: outline/envelope -->
+                                        <svg class="h-6 w-6 flex-shrink-0 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                        </svg>
+                                        <span class="ml-3">support@example.com</span>
+                                    </dd>
+                                </div>
+                            </dl>
+                            <p class="mt-6 text-base text-gray-500">
+                                Looking for careers?
+                                <a href="#" class="font-medium text-gray-700 underline">View all job openings</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+                        <div class="mx-auto max-w-lg lg:max-w-none">
+                            <form action="#" method="POST" class="grid grid-cols-1 gap-y-6">
+                                <div>
+                                    <label for="full-name" class="sr-only">Full name</label>
+                                    <input type="text" name="full-name" id="full-name" autocomplete="name" class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Full name">
+                                </div>
+                                <div>
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Email">
+                                </div>
+                                <div>
+                                    <label for="phone" class="sr-only">Phone</label>
+                                    <input type="text" name="phone" id="phone" autocomplete="tel" class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Phone">
+                                </div>
+                                <div>
+                                    <label for="message" class="sr-only">Message</label>
+                                    <textarea id="message" name="message" rows="4" class="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:ring-indigo-500" placeholder="Message"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="inline-flex justify-center rounded-md border border-transparent bg-indigo-600 py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Submit</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -184,105 +256,9 @@
         <footer class="bg-gray-50" aria-labelledby="footer-heading">
             <h2 id="footer-heading" class="sr-only">Footer</h2>
             <div class="mx-auto max-w-7xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
-                <div class="xl:grid xl:grid-cols-3 xl:gap-8">
-                    <div class="grid grid-cols-2 gap-8 xl:col-span-2">
-                        <div class="md:grid md:grid-cols-2 md:gap-8">
-                            <div>
-                                <h3 class="text-base font-medium text-gray-900">Solutions</h3>
-                                <ul role="list" class="mt-4 space-y-4">
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Marketing</a>
-                                    </li>
 
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Analytics</a>
-                                    </li>
 
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Commerce</a>
-                                    </li>
 
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Insights</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="mt-12 md:mt-0">
-                                <h3 class="text-base font-medium text-gray-900">Support</h3>
-                                <ul role="list" class="mt-4 space-y-4">
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Pricing</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Documentation</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Guides</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">API Status</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="md:grid md:grid-cols-2 md:gap-8">
-                            <div>
-                                <h3 class="text-base font-medium text-gray-900">Company</h3>
-                                <ul role="list" class="mt-4 space-y-4">
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">About</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Blog</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Jobs</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Press</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Partners</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="mt-12 md:mt-0">
-                                <h3 class="text-base font-medium text-gray-900">Legal</h3>
-                                <ul role="list" class="mt-4 space-y-4">
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Claim</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Privacy</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="text-base text-gray-500 hover:text-gray-900">Terms</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-12 xl:mt-0">
-                        <h3 class="text-base font-medium text-gray-900">Subscribe to our newsletter</h3>
-                        <p class="mt-4 text-base text-gray-500">The latest news, articles, and resources, sent to your inbox weekly.</p>
-                        <form class="mt-4 sm:flex sm:max-w-md">
-                            <label for="email-address" class="sr-only">Email address</label>
-                            <input type="email" name="email-address" id="email-address" autocomplete="email" required class="w-full min-w-0 appearance-none rounded-md border border-gray-300 bg-white py-2 px-4 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-indigo-500 focus:placeholder-gray-400 focus:outline-none focus:ring-indigo-500" placeholder="Enter your email">
-                            <div class="mt-3 rounded-md sm:mt-0 sm:ml-3 sm:flex-shrink-0">
-                                <button type="submit" class="flex w-full items-center justify-center rounded-md border border-transparent bg-gradient-to-r from-purple-600 to-indigo-600 bg-origin-border px-4 py-3 text-base font-medium text-white shadow-sm hover:from-purple-700 hover:to-indigo-700">Subscribe</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
                 <div class="mt-12 border-t border-gray-200 pt-8 md:flex md:items-center md:justify-between lg:mt-16">
                     <div class="flex space-x-6 md:order-2">
                         <a href="#" class="text-gray-400 hover:text-gray-500">
