@@ -75,14 +75,7 @@
                             {{ $slot }}
                         </div>
 
-                        <footer class="flex w-full justify-between border-t p-5 text-center">
-                            <div>
-
-                            </div>
-                            <div class="flex grow items-center justify-center text-center text-sm text-gray-500">
-                                <p>© 2021 Election Assistant, Inc. All rights reserved.</p>
-                            </div>
-                        </footer>
+                       
                     </div>
                 </main>
             </div>
