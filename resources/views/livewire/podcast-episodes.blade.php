@@ -1,7 +1,8 @@
 <div>
-    
+
     @foreach($episodes as $episode)
-        {{$episode['description']}}
+        <a href="{{$episode['external_urls']['spotify']}}">        {{$episode['name']}}
+        </a>
         <br>
 
     @endforeach
