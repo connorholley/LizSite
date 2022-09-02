@@ -14,18 +14,74 @@
 
                                 @foreach($episodes_to_show as $episode)
 
-                                <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                                <div class="flex flex-col overflow-hidden rounded-lg shadow-lg"
+                                    >
                                         <div class="flex-shrink-0">
                                                 <img class="h-96 w-full object-cover" src="{{$episode['image_url']}}" alt="">
                                         </div>
                                         <div class="flex flex-1 flex-col justify-between bg-white p-6">
                                                 <div class="flex-1">
 
-                                                        <a href="#" class="mt-2 block">
-                                                                <p class="text-xl font-semibold text-gray-900">{{$episode['name']}}</p>
-                                                                <p class="mt-3 text-base text-gray-500">{{$episode['description']}}</p>
-                                                        </a>
+
+                                                        <div href="#" class="mt-2 block">
+                                                                <p class="text-xl font-semibold text-gray-900 h-24">{{$episode['name']}}</p>
+
+
+
+
+                                                                <div
+                                                                        wire:click="show_description({{$episode->id}})"
+
+
+                                                                >
+
+                                                                        @if($description_ids[$episode->id])
+                                                                                <div
+                                                                                        class="m-4 h-8 w-8 rotate-180 rotate-180 transform transition duration-700"
+                                                                                >
+                                                                                        <svg
+                                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                                fill="none"
+                                                                                                viewBox="0 0 24 24"
+                                                                                                stroke="currentColor"
+                                                                                        >
+                                                                                                <path
+                                                                                                        stroke-linecap="round"
+                                                                                                        stroke-linejoin="round"
+                                                                                                        stroke-width="2"
+                                                                                                        d="M19 9l-7 7-7-7"
+                                                                                                />
+                                                                                        </svg>
+                                                                                </div>
+                                                                                <p class="mt-3 text-base text-gray-500 ">{{$episode['description']}}</p>
+                                                                        @else
+                                                                                <div
+                                                                                        class="m-4 h-8 w-8 rotate-180 rotate-180 transform transition duration-700"
+                                                                                >
+
+                                                                                        <svg
+                                                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                                                fill="none"
+                                                                                                viewBox="0 0 24 24"
+                                                                                                stroke="currentColor"
+                                                                                        >
+                                                                                                <path
+                                                                                                        stroke-linecap="round"
+                                                                                                        stroke-linejoin="round"
+                                                                                                        stroke-width="2"
+                                                                                                        d="M5 15l7-7 7 7"
+                                                                                                />
+                                                                                        </svg>
+                                                                                </div>
+
+                                                                        @endif
+                                                                </div>
+
+                                                        </div>
+
                                                 </div>
+
+
 
                                         </div>
                                 </div>

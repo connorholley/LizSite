@@ -8,13 +8,18 @@ use Livewire\Component;
 
 class PodcastEpisodesComponent extends Component
 {
+    public array $description_ids;
     public $episodes_to_show;
 
     public function mount()
     {
-//        $this->store_podcast_info();
-        $this->episodes_to_show= PodcastEpisodes::get();
 
+        $this->episodes_to_show= PodcastEpisodes::get();
+        $podcast_ids=PodcastEpisodes::pluck('id');
+        foreach ($podcast_ids as $id){
+            $this->description_ids[$id]=false;
+
+        }
 
     }
     public function render()
@@ -22,8 +27,15 @@ class PodcastEpisodesComponent extends Component
         return view('livewire.podcast-episodes-component');
     }
 
+    public function show_description(int $episode_id)
+    {
+        $this->description_ids[$episode_id]= !$this->description_ids[$episode_id];
+        return $this->description_ids[$episode_id];
+
+    }
     public function store_podcast_info()
     {
+        //refactor to command
         $spotify= new Spotify([
             'country' => null,
             'locale' => null,
