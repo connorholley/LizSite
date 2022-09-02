@@ -29,6 +29,7 @@ class PodcastEpisodesComponent extends Component
 
     public function show_description(int $episode_id)
     {
+        ray('in here');
         $this->description_ids[$episode_id]= !$this->description_ids[$episode_id];
         return $this->description_ids[$episode_id];
 

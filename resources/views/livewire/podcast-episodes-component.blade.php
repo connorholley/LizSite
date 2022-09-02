@@ -1,10 +1,12 @@
-<div>
+@extends('layouts.app')
+
+
+@section('content')
+
 
         <!-- This example requires Tailwind CSS v2.0+ -->
         <div class="relative bg-gray-50 px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28">
-                <div class="absolute inset-0">
-                        <div class="h-1/3 bg-white sm:h-2/3"></div>
-                </div>
+
                 <div class="relative mx-auto max-w-7xl">
                         <div class="text-center">
                                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Podcast Archive</h2>
@@ -24,7 +26,7 @@
 
 
                                                         <div href="#" class="mt-2 block">
-                                                                <p class="text-xl font-semibold text-gray-900 h-24">{{$episode['name']}}</p>
+                                                                <p class="text-xl font-semibold text-gray-900 h-16">{{$episode['name']}}</p>
 
 
 
@@ -58,7 +60,7 @@
                                                                                 <div
                                                                                         class="m-4 h-8 w-8 rotate-180 rotate-180 transform transition duration-700"
                                                                                 >
-                                                                                        
+
                                                                                         <svg
                                                                                                 xmlns="http://www.w3.org/2000/svg"
                                                                                                 fill="none"
@@ -94,4 +96,5 @@
 
 
 
-</div>
+
+@endsection
