@@ -24,7 +24,8 @@ class PodcastEpisodesComponent extends Component
     }
     public function render()
     {
-        return view('livewire.podcast-episodes-component');
+        return view('livewire.podcast-episodes-component')->extends('layouts.app')
+            ->section('content');
     }
 
     public function show_description(int $episode_id)
