@@ -14,7 +14,8 @@ class CreatePodcastEpisodesTable extends Migration
             $table->text('description');
             $table->text('image_url');
             $table->text('name');
-            $table->text('episode_url');
+            $table->text('spotify_episode_url')->nullable();
+            $table->text('apple_episode_url')->nullable();
 
             $table->timestamps();
         });

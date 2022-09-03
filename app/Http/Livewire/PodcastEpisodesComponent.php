@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use Aerni\Spotify\Spotify;
 use App\Models\PodcastEpisodes;
+use Illuminate\Support\Facades\Http;
 use Livewire\Component;
 
 class PodcastEpisodesComponent extends Component
@@ -20,7 +21,7 @@ class PodcastEpisodesComponent extends Component
             $this->description_ids[$id]=false;
 
         }
-
+//        $this->store_podcast_info();
     }
     public function render()
     {
@@ -30,7 +31,7 @@ class PodcastEpisodesComponent extends Component
 
     public function show_description(int $episode_id)
     {
-        ray('in here');
+
         $this->description_ids[$episode_id]= !$this->description_ids[$episode_id];
         return $this->description_ids[$episode_id];
 
@@ -44,15 +45,37 @@ class PodcastEpisodesComponent extends Component
             'market' => 'US',
         ]);
         $episodes=$spotify->showEpisodes('7nUXw5GywrsMrS4CZlY6ij')->get()['items'];
+        $apple_array= $this->store_apple_podcast_info();
 
         foreach ($episodes as $episode){
-            PodcastEpisodes::create([
+            PodcastEpisodes::firstOrCreate([
                 'description'=>$episode['description'],
                 'name'=>$episode['name'],
                 'image_url'=>$episode['images'][0]['url'],
-                'episode_url'=>$episode['external_urls']['spotify']
+                'spotify_episode_url'=>$episode['external_urls']['spotify'],
+                'apple_episode_url'=> $apple_array[$episode['name']]
                 ]);
 
         }
+    }
+    public function store_apple_podcast_info()
+    {
+        //makes an array of track name to apple url
+        $name_apple_url_array= [];
+
+        $response = Http::get('https://itunes.apple.com/lookup?id=1610459122&country=US&media=podcast&entity=podcastEpisode&limit=100');
+        $results= $response->json()['results'];
+
+        foreach ($results as $result){
+            $track_name = $result['trackName'];
+            if($track_name!=="Below The Tide" && $track_name!== "EP 00 - Trailer"){
+
+                $apple_url = $result['trackViewUrl'];
+
+                $name_apple_url_array[$track_name]=$apple_url;
+            }
+
+        }
+        return $name_apple_url_array;
     }
 }

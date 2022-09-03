@@ -17,7 +17,7 @@
                     <span class="block text-white">Welcome to </span>
                     <span class="block text-indigo-200">Below the tide</span>
                 </h1>
-                <p class="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">A podcast that dives deep into marine science.</p>
+                <p class="mx-auto mt-6 max-w-lg text-center text-xl text-indigo-200 sm:max-w-3xl">A podcast for everyone who grew up dreaming of being a marine biologist.</p>
                 <div class="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
                     <div class="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
                         <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-indigo-700 shadow-sm hover:bg-indigo-50 sm:px-8">Learn More</a>

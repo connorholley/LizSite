@@ -10,6 +10,7 @@ class PodcastEpisodes extends Model
         'description',
         'image_url',
         'name',
-        'episode_url',
+        'spotify_episode_url',
+        'apple_episode_url',
     ];
 }
